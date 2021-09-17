@@ -1,0 +1,31 @@
+  .header {
+    position: relative;
+    height: 95vh;
+    background-image: 
+    linear-gradient(to left bottom, 
+    rgba($color-main,0.8) 0%, 
+    rgba($color-secondary,0.8) 35%, 
+    rgba($color-sub,0.8) 100%),
+    url(../assets/images/bg.jpg);
+    background-size: cover;
+    background-position: top;
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100% );
+
+    &__logo-box {
+      position: absolute; 
+      top: 4rem;
+      left: 4rem;
+    }
+
+    &__logo {
+      height: 10rem;
+    }
+
+    &__text-box {
+      text-align: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
